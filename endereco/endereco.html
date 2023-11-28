@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selecionar Local de Entrega</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="endereco.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="IconOnLife.png" alt="Logo da Sua Empresa" class="logo">
+    <h1>Selecionar Local de Entrega</h1>
+</div>
+
+<div class="container">
+    <div class="location-info">
+        <h1>Local de Entrega</h1>
+    </div>
+    <div class="search-container">
+        <input type="text" id="address-input" placeholder="Digite o endereço">
+        <button id="search-button">Buscar</button>
+    </div>
+    <div id="map"></div>
+    <div class="cart">
+        <h2 class="cart-title">Carrinho de Compras</h2>
+        <div class="cart-item" data-price="10" data-quantity="2">
+            <div class="cart-item-details">
+                Item 1
+            </div>
+            <div class="cart-item-quantity">
+                <span class="decrement" onclick="alterarUnidade(this, -1)">-</span>
+                <span class="quantity">1</span>
+                <span class="increment" onclick="alterarUnidade(this, 1)">+</span>
+                x $10
+                <span class="remove-icon" onclick="removerItem(this)">🗑️</span>
+            </div>
+        </div>
+        <div class="cart-item" data-price="5" data-quantity="1">
+            <div class="cart-item-details">
+                Item 2
+            </div>
+            <div class="cart-item-quantity">
+                <span class="decrement" onclick="alterarUnidade(this, -1)">-</span>
+                <span class="quantity">1</span>
+                <span class="increment" onclick="alterarUnidade(this, 1)">+</span>
+                x $5
+                <span class="remove-icon" onclick="removerItem(this)">🗑️</span>
+            </div>
+        </div>
+        <button class="cart-button" id="checkout-button">Finalizar Compra</button>
+        <div class="total-section">Total: <span id="total-price">$15</span></div>
+    </div>
+</div>
+<script src="endereco.js"></script>
+</body>
+</html>
