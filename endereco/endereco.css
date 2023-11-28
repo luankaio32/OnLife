@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo em tons de cinza claro */
+}
+
+.header {
+    background-color: #4CAF50; /* Verde principal */
+    color: #fff; /* Texto branco */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.location-info {
+    background-color: #4CAF50; /* Verde principal */
+    color: #fff; /* Texto branco */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.location-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#address-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Verde principal */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: #45a049; /* Verde mais escuro em hover */
+}
+
+.cart {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Borda cinza clara */
+    padding-bottom: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-quantity {
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o ícone de "Remover do Carrinho" */
+.remove-icon {
+    color: #E93E32; /* Vermelho*/
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.remove-icon:hover {
+    color: #C72C20; 
+}
+
+.cart-button {
+    background-color: #4CAF50; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-button:hover {
+    background-color: #45a049; 
+}
+.total-section {
+    background-color: #4CAF50; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
